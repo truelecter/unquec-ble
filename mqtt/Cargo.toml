@@ -1,0 +1,26 @@
+[package]
+name = "unquec-mqtt"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+default-run = "server"
+
+[lints]
+workspace = true
+
+[dependencies]
+bluer = { workspace = true }
+tokio = { workspace = true }
+futures = { workspace = true }
+rmqtt = { workspace = true }
+simple_logger = { workspace = true }
+log = { workspace = true }
+base64 = { workspace = true }
+uuid = { workspace = true }
+sha2 = { workspace = true }
+unquec-model = { workspace = true }
+
+[[bin]]
+name = "server"
+path = "src/server.rs"

@@ -1,0 +1,11 @@
+[package]
+name = "unquec-ble"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]

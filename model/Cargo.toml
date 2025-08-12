@@ -1,0 +1,27 @@
+[package]
+name = "unquec-model"
+edition = "2024"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+
+[lints]
+workspace = true
+
+[lib]
+name = "unquec_model"
+path = "src/lib.rs"
+
+[[example]]
+name = "decode"
+# path = "src/decode.rs"
+
+[[example]]
+name = "encode"
+# path = "src/encode.rs"
+
+
+[dependencies]
+
+[dev-dependencies]
+base64 = { workspace = true }

@@ -1,0 +1,40 @@
+# [package]
+# name = "quec-ble"
+# version = "0.1.0"
+# edition = "2024"
+# default-run = "main"
+
+[workspace]
+members = ["ble", "mqtt", "model"]
+resolver = "3"
+
+[workspace.package]
+version = "0.1.0"
+description = "Toolset to detach Wonderfree devices from cloud"
+authors = ["truelecter"]
+
+[workspace.dependencies]
+# btleplug = { version = "0.11.8", features = ["serde"] } 
+futures = "0.3.31"
+tokio = { version = "1.47.0", features = ["full"] } 
+uuid = "1"
+# pretty_env_logger = "0.5.0"
+# anyhow = "1"
+
+# bluest = { version = "0.6.9", features = ["serde"] }
+# futures-lite = "2.6.0"
+# tracing = "0.1.41"
+# tracing-subscriber = { version = "0.3.15", features = ["env-filter"] }
+
+bluer = { version = "0.17.4", features = ["bluetoothd", "tokio-stream", "id"] }
+base64 = "0.22.1"
+sha2 = "0.10.9"
+
+rmqtt = { version = "0.15.0-rc.3", features = ["full"] }
+simple_logger = "5"
+log = "0.4"
+unquec-model = { path = "./model" }
+
+# TODO: remove this after prototype
+[workspace.lints.rust]
+unused = "allow"
