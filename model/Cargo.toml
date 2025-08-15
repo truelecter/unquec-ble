@@ -22,6 +22,7 @@ name = "encode"
 
 
 [dependencies]
+byteorder = { workspace = true }
 
 [dev-dependencies]
 base64 = { workspace = true }

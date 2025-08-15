@@ -23,4 +23,4 @@ unquec-model = { workspace = true }
 
 [[bin]]
 name = "server"
-path = "src/server.rs"
+path = "src/main.rs"

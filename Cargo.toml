@@ -35,6 +35,8 @@ simple_logger = "5"
 log = "0.4"
 unquec-model = { path = "./model" }
 
+byteorder = "1"
+
 # TODO: remove this after prototype
 [workspace.lints.rust]
 unused = "allow"
